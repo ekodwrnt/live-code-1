@@ -1,0 +1,90 @@
+//SOAL NOMOR.1
+- Nilai 80 - 100: A
+- Nilai 65 - 79: B
+- Nilai 50 - 64: C
+- Nilai 35 - 49: D
+- Nilai 0 - 34: E
+
+jika Nilai 80>=100
+maka Nilai A
+jika Nilai 65>=79
+maka Nilai B
+jika Nilai 50>=64
+maka Nilai C
+jika Nilai 35>=49
+maka Nilai D
+jika Nilai 0>=34
+maka Nilai E
+else Invalid
+
+Nama : String
+Nilai : Integer
+NilaiAngka : Integer
+NilaiHuruf : Real
+ 
+READ Nama
+READ Nilai
+IF NilaiAngka>=0 AND NilaiAngka <=34 THEN NilaiHuruf<-'E' 
+ELSE IF NilaiAngka >=35 AND NilaiAngka <=49 THEN NilaiHuruf<-'D'
+ELSE IF NilaiAngka >=50 AND NilaiAngka <=64 THEN NilaiHuruf<-'C'
+ELSE IF NilaiAngka >=65 AND NilaiAngka <=79 THEN NilaiHuruf<-'B'
+ELSE IF NilaiAngka >=80 AND NilaiAngka <=100 THEN NilaiHuruf<-'A'
+ELSE NilaiAngka <=0 AND NilaiAngka >=100 Keterangan<-'Nilai Invalid'
+ENDIF
+WRITE NIM AND Nilai
+
+//SOAL NOMOR.2
+<?php
+$name = "arief";
+$sub = substr($name,0,1);
+$name2 =  "rinina";
+$sub2 = substr($name2,0,1);
+$name3 = "joshua";
+$sub3 = substr($name3,0,1);
+$name4 = "yusril";
+$sub4 = substr($name4,0,1);
+
+$grup1 = "abcd";
+$sab = substr($grup1,0,1);
+$sab2 = substr($grup1,1,1);
+$sab3 = substr($grup1,2,1);
+$sab4 = substr($grup1,3,1);
+$grup2 = "efgh";
+$seb1 = substr($grup2,0,1);
+$seb2 = substr($grup2,1,1);
+$seb3 = substr($grup2,2,1);
+$seb4 = substr($grup2,3,1);
+
+if ($sub === $sab){
+  echo "masuk grup pertama";
+}elseif($sub === $seb){
+  echo "masuk grup kedua";
+}else{
+  echo "masuk grup terakhir";
+}
+echo "\n";
+if ($sub2 === $sab2){
+  echo "masuk grup pertama";
+}elseif($sub2 !== $seb2){
+  echo "masuk grup kedua";
+}else{
+  echo "masuk grup terakhir";
+}
+echo "\n";
+if ($sub3 === $sab3){
+  echo "masuk grup pertama";
+}elseif($sub3 === $seb3){
+  echo "masuk grup kedua";
+}else{
+  echo "masuk grup terakhir";
+}
+echo "\n";
+if ($sub4 === $sab2){
+  echo "masuk grup pertama";
+}elseif($sub4 === $seb4){
+  echo "masuk grup kedua";
+}else{
+  echo "masuk grup terakhir";
+}
+echo "\n";
+?>
